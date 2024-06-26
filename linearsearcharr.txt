@@ -1,0 +1,38 @@
+#include <iostream> 
+ using namespace std;
+ 
+  int main()
+  {
+      int size,x[30],i,num,pos = -1;
+      
+      cout<<"\n\n SIZE SANGH BHADWYA:";
+      cin>>size;
+      
+      cout<<"\n\n NUMBER DE CHAKKYA:";
+      for(i=0;i<size;i++)
+      {
+           cin>>x[i];
+      }
+      cout<<"\n\n ENTER THE NUMBER TO BE SEARCHED:";
+      cin>>num;
+      for(i=0;i<size;i++)
+      {
+          if(num==x[i])
+          {
+              pos = i + 1;
+              break;
+          }
+      }  
+         if(pos == -1)
+         {
+              cout<<"\n\n NUMBER NAHI LAVDU";
+              
+         }
+         else
+         {
+             
+             cout<<"\n\n position = "<<pos;
+         }
+      }
+      
+      
